@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" href="CV.css">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;700&display=swap" rel="stylesheet">
+    <title>
+        My CV
+    </title>
+</head>
+
+<body>
+    <header>
+        <img class="photo" src="D2990CF8-225F-4729-B598-8A7262F10145_4_5005_c.jpeg" alt="photo" width="142" height="189">
+        <div class="short_about">
+            <h1>Александр Гутник</h1>
+            <p>Fullstack Python Developer</p>
+        </div>
+    </header>
+    <div class="main_about">
+        <div class="text_about">
+            <h2>Обо мне</h2>
+            <p> Здравствуйте! Меня зовут Александр, я занимаюсь Fullstack разработкой веб-приложений на Python. Прохожу курс Skillfactory «Fullstack разработчик на Python». Также учусь на первом курсе СевГУ на направлении «Информационные системы».
+            </p>
+        </div>
+        <div class="additional_info">
+            <button type="button" class="collapsible">Дополнительная информация</button>
+            <ul class="contacts">
+                <li>Возраст: 17</li>
+                <li>Почта: alexvgutnik@gmail.com</li>
+                <li>Город: Севастополь</li>
+            </ul>
+        </div>
+    </div>
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+        for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.display === "block") {
+                    content.style.display = "none";
+                } else {
+                    content.style.display = "block";
+                }
+            });
+        }
+    </script>
+    <hr>
+    <div class="skillbar">
+        <h2>Мои навыки</h2>
+        <p>Python</p>
+        <div class="container">
+            <div class="skills python">90%</div>
+        </div>
+        <p>HTML</p>
+        <div class="container">
+            <div class="skills html">80%</div>
+        </div>
+        <p>CSS</p>
+        <div class="container">
+            <div class="skills css">70%</div>
+        </div>
+        <p>JavaScript</p>
+        <div class="container">
+            <div class="skills js">60%</div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,134 @@
+html {
+    font-family: 'Jost', Helvetica, Arial, sans-serif;
+}
+
+header {
+    margin: 0px;
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(190 206 255);
+}
+
+.photo {
+    margin: 20px 50px;
+    border: 3px solid rgb(140 160 221);
+    border-radius: 5px;
+    box-shadow: 5px 10px #c2c2c2
+}
+
+.short_about {
+    align-self: center;
+    margin-left: 100px;
+    padding: 10px;
+    border: 3px solid rgb(140 160 221);
+    border-radius: 10px;
+    background-color: white;
+    border: 3px solid white;
+    box-shadow: 10px 5px #c2c2c2;
+}
+
+.main_about {
+    display: flex;
+    flex-direction: row;
+}
+
+.text_about {
+    margin: 30px;
+    width: 70%;
+}
+
+.additional_info {
+    display: flex;
+    flex-direction: column;
+}
+
+.collapsible {
+    margin-top: 30px;
+    align-self: center;
+    height: 50px;
+    color: #444;
+    cursor: pointer;
+    padding: 15px;
+    border: 3px solid rgb(140 160 221);
+    text-align: center;
+}
+
+.active,
+.collapsible:hover {
+    background-color: #ccc;
+}
+
+.contacts {
+    display: none;
+}
+
+.skillbar {
+    margin: 30px;
+}
+
+.container {
+    width: 100%;
+    background-color: darkgray;
+}
+
+.python {
+    width: 90%;
+    background-color: rgb(190 206 255);
+    padding: 2px;
+}
+
+.html {
+    width: 80%;
+    background-color: rgb(140 160 221);
+    padding: 2px;
+}
+
+.css {
+    width: 70%;
+    background-color: rgb(190 206 255);
+    padding: 2px;
+}
+
+.js {
+    width: 60%;
+    background-color: rgb(140 160 221);
+    padding: 2px;
+}
+
+@media screen and (max-width: 700px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: rgb(186, 200, 241);
+    }
+    h1 {
+        font-size: 25px;
+    }
+    .short_about {
+        margin: 0px;
+        margin-bottom: 10px;
+        height: 100px;
+    }
+    .short_about h1 {
+        margin: 0px;
+    }
+    .main_about {
+        display: flex;
+        flex-direction: column;
+    }
+    .text_about {
+        margin: 20px 20px 8px 20px;
+        width: 90%;
+    }
+    .collapsible {
+        margin-top: 0px;
+        margin-bottom: 15px;
+    }
+    .contacts {
+        width: 90%;
+        margin-top: 0px;
+        padding: 0px;
+        padding-left: 30px;
+    }
+}
